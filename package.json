@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "set-directory": "mv ./out/_next ./out/next && cd ./out && grep -rl '/_next' * | xargs sed -i 's|/_next|/next|g'",
+    "build-extension": "npm run build && npm run set-directory",
     "start": "next start",
     "lint": "next lint"
   },
@@ -18,6 +20,11 @@
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.57.1",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.206",
+    "@types/firefox-webext-browser": "^94.0.1"
   }
 }
