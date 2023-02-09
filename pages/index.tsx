@@ -1,9 +1,35 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.scss'
+import Head from 'next/head';
+import styles from '../app/styles/Home.module.scss';
+import { ButtonPanel } from '../app/components/button_panel/button_panel';
 
-const inter = Inter({ subsets: ['latin'] })
+const clubtalEnvironments = {
+  urls: ['https://www.clubtal.com','https://dev.clubtal.com'],
+  names: ['Produccion', 'Desarrollo']
+}
+const clubtalJira = {
+  urls: [
+  'https://clubtal.atlassian.net/jira/software/c/projects/WEB/boards/1',
+  'https://clubtal.atlassian.net/jira/software/c/projects/HR/boards/3',
+  'https://clubtal.atlassian.net/jira/software/c/projects/ST/boards/5',
+  'https://clubtal.atlassian.net/jira/software/projects/DES/boards/8',
+  'https://clubtal.atlassian.net/jira/software/c/projects/IDEA/boards/6'
+  ],
+  names: ['Web', 'Hr', 'St', 'Design', 'Idea']
+}
+const clubtalConfluence = {
+  urls: [
+  'https://clubtal.atlassian.net/wiki/spaces/WEB/overview',
+  'https://clubtal.atlassian.net/wiki/spaces/TEC/overview'
+  ],
+  names: ['General', 'Software']
+}
+const clubtalTools = {
+  urls: [
+  'https://www.deepl.com/translator',
+  'https://chat.openai.com/chat'
+  ],
+  names: ['Traductor idiomas', 'Chat Gpt']
+}
 
 export default function Home() {
   return (
@@ -15,7 +41,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        HOLAAAAAAAA cambieee
+        <p>Sitios web clubtal</p>
+        <ButtonPanel numberOfButtons={2} arrayOfLinks={clubtalEnvironments.urls} arrayOfNames={clubtalEnvironments.names} />
+        <p>Projectos Jira</p>
+        <ButtonPanel numberOfButtons={5} arrayOfLinks={clubtalJira.urls} arrayOfNames={clubtalJira.names} />
+        <p>Documentacion Confluence</p>
+        <ButtonPanel numberOfButtons={2} arrayOfLinks={clubtalConfluence.urls} arrayOfNames={clubtalConfluence.names} />
+        <p>Herramientas</p>
+        <ButtonPanel numberOfButtons={2} arrayOfLinks={clubtalTools.urls} arrayOfNames={clubtalTools.names} />
       </main>
     </>
   )

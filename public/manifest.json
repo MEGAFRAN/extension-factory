@@ -1,9 +1,16 @@
 {
-    "name": "Extension Factory",
-    "version": "1.0.0",
+    "name": "Clubtal Links",
+    "version": "0.0.0.1",
     "manifest_version": 3,
     "action": {
-      "default_title": "Extension Factory",
+      "default_title": "Clubtal Links",
       "default_popup": "index.html"
+    },
+    "description": "Links de utilidad para los miembros de Clubtal",
+    "icons": {
+      "16": "Logo_400x400.png",
+      "32": "Logo_400x400.png",
+      "48": "Logo_400x400.png",
+      "128": "Logo_400x400.png"
     }
   }
