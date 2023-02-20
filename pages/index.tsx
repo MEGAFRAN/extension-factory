@@ -10,11 +10,13 @@ const clubtalJira = {
   urls: [
   'https://clubtal.atlassian.net/jira/software/c/projects/WEB/boards/1',
   'https://clubtal.atlassian.net/jira/software/c/projects/HR/boards/3',
-  'https://clubtal.atlassian.net/jira/software/c/projects/ST/boards/5',
+  'https://clubtal.atlassian.net/jira/software/projects/ST/boards/13',
+  'https://clubtal.atlassian.net/jira/software/projects/AF/boards/11',
   'https://clubtal.atlassian.net/jira/software/projects/DES/boards/8',
-  'https://clubtal.atlassian.net/jira/software/c/projects/IDEA/boards/6'
+  'https://clubtal.atlassian.net/jira/software/projects/IDEA/boards/9',
+  'https://clubtal.atlassian.net/jira/software/projects/ON/boards/10'
   ],
-  names: ['Web', 'Hr', 'St', 'Design', 'Idea']
+  names: ['Web', 'Hr', 'St', 'Af', 'Design', 'Idea', 'On Boarding']
 }
 const clubtalConfluence = {
   urls: [
@@ -42,13 +44,13 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <p>Sitios web clubtal</p>
-        <ButtonPanel numberOfButtons={2} arrayOfLinks={clubtalEnvironments.urls} arrayOfNames={clubtalEnvironments.names} />
+        <ButtonPanel numberOfButtons={clubtalEnvironments.names.length} arrayOfLinks={clubtalEnvironments.urls} arrayOfNames={clubtalEnvironments.names} />
         <p>Projectos Jira</p>
-        <ButtonPanel numberOfButtons={5} arrayOfLinks={clubtalJira.urls} arrayOfNames={clubtalJira.names} />
+        <ButtonPanel numberOfButtons={clubtalJira.names.length} arrayOfLinks={clubtalJira.urls} arrayOfNames={clubtalJira.names} />
         <p>Documentacion Confluence</p>
-        <ButtonPanel numberOfButtons={2} arrayOfLinks={clubtalConfluence.urls} arrayOfNames={clubtalConfluence.names} />
+        <ButtonPanel numberOfButtons={clubtalConfluence.names.length} arrayOfLinks={clubtalConfluence.urls} arrayOfNames={clubtalConfluence.names} />
         <p>Herramientas</p>
-        <ButtonPanel numberOfButtons={2} arrayOfLinks={clubtalTools.urls} arrayOfNames={clubtalTools.names} />
+        <ButtonPanel numberOfButtons={clubtalTools.names.length} arrayOfLinks={clubtalTools.urls} arrayOfNames={clubtalTools.names} />
       </main>
     </>
   )
