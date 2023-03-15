@@ -10,13 +10,11 @@ const clubtalJira = {
   urls: [
   'https://clubtal.atlassian.net/jira/software/c/projects/WEB/boards/1',
   'https://clubtal.atlassian.net/jira/software/c/projects/HR/boards/3',
-  'https://clubtal.atlassian.net/jira/software/projects/ST/boards/13',
-  'https://clubtal.atlassian.net/jira/software/projects/AF/boards/11',
   'https://clubtal.atlassian.net/jira/software/projects/DES/boards/8',
   'https://clubtal.atlassian.net/jira/software/projects/IDEA/boards/9',
   'https://clubtal.atlassian.net/jira/software/projects/ON/boards/10'
   ],
-  names: ['Web', 'Hr', 'St', 'Af', 'Design', 'Idea', 'On Boarding']
+  names: ['Web', 'Hr', 'Design', 'Idea', 'On Boarding']
 }
 const clubtalConfluence = {
   urls: [
