@@ -8,13 +8,13 @@ const clubtalEnvironments = {
 }
 const clubtalJira = {
   urls: [
-  'https://clubtal.atlassian.net/jira/software/c/projects/WEB/boards/1',
+  'https://clubtal.atlassian.net/jira/software/projects/WA/boards/15',
   'https://clubtal.atlassian.net/jira/software/c/projects/HR/boards/3',
   'https://clubtal.atlassian.net/jira/software/projects/DES/boards/8',
   'https://clubtal.atlassian.net/jira/software/projects/IDEA/boards/9',
   'https://clubtal.atlassian.net/jira/software/projects/ON/boards/10'
   ],
-  names: ['Web', 'Hr', 'Design', 'Idea', 'On Boarding']
+  names: ['Web AI', 'Hr', 'Design', 'Idea', 'On Boarding']
 }
 const clubtalConfluence = {
   urls: [
