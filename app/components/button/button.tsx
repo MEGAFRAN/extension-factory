@@ -16,13 +16,11 @@ export const Button = ({
 
   let button = scrollToSection ? (
     <button className={variant} onClick={() => scrollTo(scrollToSection)}>
-      {" "}
-      {text}{" "}
+      {text}
     </button>
   ) : (
     <button className={variant} onClick={handleClick}>
-      {" "}
-      {text}{" "}
+      {text}
     </button>
   )
 

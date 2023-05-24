@@ -13,16 +13,6 @@ type QuickLinksData = {
 };
 
 const quickLinksData: QuickLinksData = {
-  clubtalEnvironments : {
-    urls: ['https://www.clubtal.com','https://dev.clubtal.com'],
-    names: ['Produccion', 'Desarrollo'],
-    title: 'Clubtal websites'
-  },
-  clubtalRepos: {
-    urls: ['https://github.com/MEGAFRAN/clubtal'],
-    names: ['Github Sitio web'],
-    title: 'Code repos'
-  },
   clubtalProjects : {
     urls: [
     'https://clubtal.atlassian.net/jira/software/projects/WA/boards/15',
@@ -34,6 +24,31 @@ const quickLinksData: QuickLinksData = {
     ],
     names: ['Web AI', 'Marketing', 'Hr', 'Design', 'Idea', 'On Boarding'],
     title: 'Jira projects'
+  },
+  clubtalEnvironments : {
+    urls: ['https://www.clubtal.com','https://dev.clubtal.com'],
+    names: ['Production', 'Development'],
+    title: 'Clubtal websites'
+  },
+  clubtalSocialMedia: {
+    urls: [
+      'https://www.facebook.com/people/Clubtal-English/pfbid067t2Szxv2sfomcpPhDxD2oDmnQBNToGWMQy42Z6bBQd1UswAn2MM4pk5TS5ceAArl/',
+      'https://www.facebook.com/people/Clubtal-Esp/pfbid0Xy1QD2DDm4obQz75E259Ehk7vKTFNr53FFkwVujDu5RfcLBNqLAt8dCjxWqr8Xfol/',
+      'https://www.instagram.com/clubtal_en/',
+      'https://www.instagram.com/clubtal_es/'
+    ],
+    names: [
+      'Facebook english', 
+      'Facebook español', 
+      'Instagram english', 
+      'Instagram español'
+    ],
+    title: 'Social media'
+  },
+  clubtalRepos: {
+    urls: ['https://github.com/MEGAFRAN/clubtal'],
+    names: ['Github website'],
+    title: 'Code repos'
   },
   clubtalDocumentation : {
     urls: [
